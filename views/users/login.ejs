@@ -1,0 +1,15 @@
+<% if (error) { %> 
+    <em><%= error %> </em> 
+<% } %> 
+<!-- em stands for emphasized text. italicizes -->
+
+<form action="/users/login" method="POST">
+    <label for="eamil">Email:</label>
+    <input type="email" name="email" id="email">
+    <!-- type tells the browser how to deal with and formats it -->
+    <!-- name="_____" - this needs to correspond with the req.body._____ -->
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password">
+
+    <button type="submit">Login</button>
+</form>
